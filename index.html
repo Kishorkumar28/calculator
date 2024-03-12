@@ -9,20 +9,21 @@
 </head>
 <body>
     <div class="container">
-        <h1>Calculator</h1>
-        <input type="text" id="display" class="form-control mb-3" readonly>
+        <h1 id="title">Calculator</h1>
+        <p id="description">This is an calcultor app using DOM Manipulation</p>
+        <input type="text" id="result" class="form-control mb-3" readonly>
         <div class="row">
             <div class="col-md-3">
-                <button class="btn btn-primary btn-block" onclick="addToDisplay('1')">1</button>
+                <button id="1"class="btn btn-primary btn-block" onclick="addToDisplay('1')">1</button>
             </div>
             <div class="col-md-3">
-                <button class="btn btn-primary btn-block" onclick="addToDisplay('2')">2</button>
+                <button id="2" class="btn btn-primary btn-block" onclick="addToDisplay('2')">2</button>
             </div>
             <div class="col-md-3">
-                <button class="btn btn-primary btn-block" onclick="addToDisplay('3')">3</button>
+                <button id="3" class="btn btn-primary btn-block" onclick="addToDisplay('3')">3</button>
             </div>
             <div class="col-md-3">
-                <button class="btn btn-primary btn-block" onclick="addToDisplay('+')">+</button>
+                <button class="btn btn-primary btn-block" id="add" onclick="addToDisplay('+')">+</button>
             </div>
         </div>
         <div class="row">
@@ -36,7 +37,7 @@
                 <button class="btn btn-primary btn-block" onclick="addToDisplay('6')">6</button>
             </div>
             <div class="col-md-3">
-                <button class="btn btn-primary btn-block" onclick="addToDisplay('-')">-</button>
+                <button class="btn btn-primary btn-block" id="subtract" onclick="addToDisplay('-')">-</button>
             </div>
         </div>
         <div class="row">
@@ -61,7 +62,7 @@
                 <button class="btn btn-primary btn-block" onclick="addToDisplay('.')">.</button>
             </div>
             <div class="col-md-3">
-                <button class="btn btn-primary btn-block" onclick="calculate()">=</button>
+                <button class="btn btn-primary btn-block" id="equal" onclick="calculate()">=</button>
             </div>
             <div class="col-md-3">
                 <button class="btn btn-primary btn-block" onclick="addToDisplay('/')">/</button>
@@ -69,7 +70,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <button class="btn btn-danger btn-block" onclick="clearDisplay()">Clear</button>
+                <button class="btn btn-danger btn-block" id="clear" onclick="clearDisplay()">Clear</button>
             </div>
             <div class="col-md-6">
                 <button class="btn btn-info btn-block" onclick="memoryClear()">MC</button>

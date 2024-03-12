@@ -1,11 +1,11 @@
 function addToDisplay(value) {
-    document.getElementById('display').value += value;
+    document.getElementById('result').value += value;
 }
 
 function calculate() {
     try {
-        let result = eval(document.getElementById('display').value);
-        document.getElementById('display').value = result;
+        let result = eval(document.getElementById('result').value);
+        document.getElementById('result').value = result;
     } catch (error) {
         alert("Invalid expression");
     }
@@ -13,7 +13,7 @@ function calculate() {
 
 
 function clearDisplay() {
-    document.getElementById('display').value = '';
+    document.getElementById('result').value = '';
 }
 
 function memoryClear() {
