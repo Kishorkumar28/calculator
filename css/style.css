@@ -1,0 +1,11 @@
+.container {
+    width: 300px;
+    margin: 50px auto;
+}
+#display {
+    margin-bottom: 10px;
+    text-align: right;
+}
+.btn-block {
+    margin-bottom: 10px;
+}
